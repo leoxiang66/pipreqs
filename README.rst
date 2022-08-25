@@ -60,19 +60,20 @@ Usage
 
 Example
 -------
+用法：   
 
-::
+　　在项目的根目录下使用    ``pipreqs ./``   
 
-    $ pipreqs /home/project/location
-    Successfully saved requirements file in /home/project/location/requirements.txt
+　　如果是Windows系统，会报编码错误 (UnicodeDecodeError: 'gbk' codec can't decode byte 0xa8 in position 24: illegal multibyte sequence)  
 
-Contents of requirements.txt
+　　使用时，指定编码格式      ``pipreqs ./ --encoding=utf8``
 
-::
+ 
 
-    wheel==0.23.0
-    Yarg==0.1.9
-    docopt==0.6.2
+　　生成requirements.txt 文件后，可以根据这个文件下载所有的依赖
+
+　　用法：``pip install -r requriements.txt`` 即可
+
 
 Why not pip freeze?
 -------------------
