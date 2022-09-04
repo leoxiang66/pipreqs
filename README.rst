@@ -66,7 +66,7 @@ Example
 
 　　如果是Windows系统，会报编码错误 (UnicodeDecodeError: 'gbk' codec can't decode byte 0xa8 in position 24: illegal multibyte sequence)  
 
-　　使用时，指定编码格式      ``pipreqs ./ --encoding=utf8``,  忽略env  ``pipreqs ./ --encoding=utf8 --ignore env``
+　　使用时，指定编码格式      ``pipreqs ./ --encoding=utf8``  |  忽略env  ``pipreqs ./ --encoding=utf8 --ignore env``  | 覆盖现有文件: ``pipreqs ./ --encoding=utf8 --ignore devenv --force``
     
     
    
